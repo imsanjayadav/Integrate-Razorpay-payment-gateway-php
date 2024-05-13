@@ -17,7 +17,7 @@ Let’s create a bootstrap normal form to get customer information and amount de
 
 Create an index.php page and Copy and Paste the following code into your index.php file.
 
-...
+... code
 <!DOCTYPE html>
 <html>
 <head>
@@ -182,7 +182,7 @@ In this step, we’ve created the ‘submitpayment.php’ code file to manage AJ
 
 Within this file, you have the flexibility to handle database insertion tasks and create orders through Razorpay API calls.
 
-
+...code
 
 <?php
 header('Access-Control-Allow-Origin:*');
@@ -298,7 +298,7 @@ if(isset($_GET)){
     echo "</p>";
 }
 ?>
-
+...
 
 
 ![demo](https://www.tutorialswebsite.com/wp-content/uploads/2024/02/razorpay-payment-gateway-integration.png)
