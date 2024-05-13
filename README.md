@@ -64,9 +64,9 @@ Create an index.php page and Copy and Paste the following code into your index.p
 ![Demo](https://www.tutorialswebsite.com/wp-content/uploads/2024/02/How-to-Integrate-Razorpay-payment-gateway-in-PHP-tutorialswebsite-com.png)
 
 Include the Razorpay Checkout script in your index.php file:
-
+```
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
+```
 Now add the below script code in the index.php file, this code will act on the form submit button click. This is the Razorpay checkout js code which populates the payment popup form.
 
 ```
