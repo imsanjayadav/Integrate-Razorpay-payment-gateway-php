@@ -17,7 +17,7 @@ Let’s create a bootstrap normal form to get customer information and amount de
 
 Create an index.php page and Copy and Paste the following code into your index.php file.
 
-
+...
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +59,7 @@ Create an index.php page and Copy and Paste the following code into your index.p
 </div>
 </body>
 </html>
-
+...
 
 ![Demo](https://www.tutorialswebsite.com/wp-content/uploads/2024/02/How-to-Integrate-Razorpay-payment-gateway-in-PHP-tutorialswebsite-com.png)
 
