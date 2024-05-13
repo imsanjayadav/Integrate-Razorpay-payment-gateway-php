@@ -17,7 +17,7 @@ Let’s create a bootstrap normal form to get customer information and amount de
 
 Create an index.php page and Copy and Paste the following code into your index.php file.
 
-... code
+``` code
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +59,7 @@ Create an index.php page and Copy and Paste the following code into your index.p
 </div>
 </body>
 </html>
-...
+```
 
 ![Demo](https://www.tutorialswebsite.com/wp-content/uploads/2024/02/How-to-Integrate-Razorpay-payment-gateway-in-PHP-tutorialswebsite-com.png)
 
@@ -69,7 +69,7 @@ Include the Razorpay Checkout script in your index.php file:
 
 Now add the below script code in the index.php file, this code will act on the form submit button click. This is the Razorpay checkout js code which populates the payment popup form.
 
-
+```
 <script>
     //Pay Amount
     jQuery(document).ready(function($){
@@ -173,6 +173,7 @@ rzp1.on('payment.failed', function (response){
  });
     });
 </script>
+```
 
 In the above JS code, When the user clicks on the pay now button we will get the customer details like name, email, mobile, and price using JS. Also, you can see the Ajax code to process the Razorpay payment. When payment succeeds or fails you will get redirected to the page based on the above script redirection.
 
@@ -182,7 +183,7 @@ In this step, we’ve created the ‘submitpayment.php’ code file to manage AJ
 
 Within this file, you have the flexibility to handle database insertion tasks and create orders through Razorpay API calls.
 
-...code
+```
 
 <?php
 header('Access-Control-Allow-Origin:*');
@@ -280,7 +281,7 @@ echo json_encode(['res'=>'success','order_number'=>$order_id,'userData'=>$dataAr
     echo json_encode(['res'=>'error']); exit;
 }
        ?>   
-
+```
 
 
 Step 5: Create a Payment Success Page
@@ -289,7 +290,7 @@ After a successful payment process, users will be redirected to a success page. 
 Use the below payment-success.php file code
 
  
-
+```
 <?php 
 if(isset($_GET)){
     
@@ -298,7 +299,7 @@ if(isset($_GET)){
     echo "</p>";
 }
 ?>
-...
+```
 
 
 ![demo](https://www.tutorialswebsite.com/wp-content/uploads/2024/02/razorpay-payment-gateway-integration.png)
@@ -306,7 +307,7 @@ if(isset($_GET)){
 Step 6: Create a Payment Failed Page
 Use the below payment-failed.php file code
 
-
+```
 <?php 
 if(isset($_GET)){
     
@@ -315,7 +316,7 @@ if(isset($_GET)){
     echo "</p>";
 }
 ?>
-
+```
  
 
 
